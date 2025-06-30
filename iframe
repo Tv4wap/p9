@@ -1,0 +1,2 @@
+
+<div class="container"><iframe class="responsive-iframe" name="a" src="{{GET(url)}}" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="" allow="autoplay; encrypted-media" allowfullscreen="yes"></iframe></div><style>.responsive-iframe { position: relative; top: -0px; left: 0; bottom: -0px; right: 0; width: 100%; height:460px; border: none;}.container { position:relative ; width: 100%; height:460px; overflow: hidden; padding-top: 0.0%; /* 16:9 Aspect Ratio */}</style>
