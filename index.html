@@ -31,27 +31,23 @@
         
 
         function playMedia() {
-            let playerConfig = {
-            	
-                                                   "autostart": true,
-                "preload": "none",
-                "repeat": true,
-                "Volume": "100",
-		"mute": false,
-                 "width": "100%",
-	        "cast": {},
-                "setPip": false
-            };
+            
 
             if (m3u8Link) {
-                playerConfig = {
-                    ...playerConfig,
-                    file: m3u8Link,
-                    type: "hls",
-			label: "1080p",
-                        default: true, 
-                    drm: {}
-                };
+                var jwp = jwplayer('player');
+  jwp.setup({
+    width: "100%",
+    autostart:"true", 
+    mute:"true", 
+    height: "100%",
+    key: "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=",
+    sources: [
+      {file: "m3u8Link",}
+    ],
+    image: "",
+    
+    primary: "html5"
+  });
             }
 
             const playerInstance = jwplayer('jwplayerDiv').setup(playerConfig);
