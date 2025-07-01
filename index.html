@@ -26,13 +26,11 @@
 <script> jwplayer.defaults = jwDefaults; </script>
     <div id="jwplayerDiv"></div>
     <script>
-        const queryParams = new URLSearchParams(window.location.search);
-        const m3u8Link = queryParams.get('url');
-        
-
-        function playMedia() {
-            
-
+        const urlParams = new URLSearchParams(window.location.search);
+    const m3u8Link = urlParams.get('url');
+    
+    
+   
             if (m3u8Link) {
                 var jwp = jwplayer('player');
   jwp.setup({
